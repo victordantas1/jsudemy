@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercíos aula 13</title>
+</head>
+<body>
+    
+    <script>
+        const nome = window.prompt('Digite o seu nome:')
+        document.body.innerHTML = `<p>O seu nome é: <strong>${nome}</strong></p>`
+        document.body.innerHTML += `<p>O seu nome tem <strong>${nome.length}</strong> letras</p>`
+        document.body.innerHTML += `<p>A segunda letra do seu nome é: <strong>${nome.charAt(1)}</strong></p>`
+        document.body.innerHTML += `<p>O índice da primeira letra "A" do seu nome é: <strong>${nome.indexOf('a')}</strong></p>`
+        document.body.innerHTML += `<p>O índice da última letra "A" do seu nome é: <strong>${nome.lastIndexOf('a')}</strong></p>`
+        document.body.innerHTML += `<p>As últimas 3 letras do seu nome são: <strong>${nome.slice(-3)}</strong></p>`
+        document.body.innerHTML += `<p>As palavras do seu nome são: <strong>${nome.split(" ")}</strong></p>`
+        document.body.innerHTML += `<p>Seu nome em letras maiúsculas é: <strong>${nome.toUpperCase()}</strong></p>`
+        document.body.innerHTML += `<p>Seu nome em letras minúsculas é: <strong>${nome.toLocaleLowerCase()}</strong></p>`
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
