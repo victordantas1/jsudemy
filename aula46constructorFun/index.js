@@ -10,7 +10,7 @@ function Pessoa(nome, sobrenome) {
     }
     
     this.nome = nome;
-    this.sobrenom = sobrenome;
+    this.sobrenome = sobrenome;
 
     this.metodo = () => {
         console.log(`${this.nome}: sou um metodo`);
