@@ -33,10 +33,14 @@ const caneca = Object.assign({}, produto);
 console.log(caneca);
 
 //
-
-Object.freeze(produto);
+console.log("Produto sem freeze:");
 produto.nome = "Outro nome";
 console.log(produto)
+console.log('Produto com freeze');
+Object.freeze(produto);
+produto.nome = "Sem nome";
+console.log(produto)
+
 
 //
 

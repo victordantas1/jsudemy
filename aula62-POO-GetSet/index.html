@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr" data-version-tag="?20230912T102813Z" data-root-path="../">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="application-name" content="matrixcalc" />
+  <meta name="theme-color" content="#2B5797" />
+  <meta name="color-scheme" content="light dark" />
+  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'unsafe-eval' 'self' data: blob: ws://*.hypercomments.com http://matrixcalc.org http://*.googleapis.com http://*.googlesyndication.com http://*.googletagservices.com http://*.doubleclick.net http://*.gstatic.com http://*.wp.com http://*.gravatar.com http://counter.yadro.ru http://*.hypercomments.com http://*.yandex.ru http://*.yastatic.net http://*.megaflowers.ru http://*.vk.me http://*.youtube.com http://*.ytimg.com wss://*.hypercomments.com https://matrixcalc.org https://*.googleapis.com https://*.googlesyndication.com https://*.googletagservices.com https://*.googleadservices.com https://*.doubleclick.net https://*.gstatic.com https://*.wp.com https://*.gravatar.com https://counter.yadro.ru https://cdn.ampproject.org https://adservice.google.ad https://adservice.google.ae https://adservice.google.al https://adservice.google.am https://adservice.google.as https://adservice.google.at https://adservice.google.az https://adservice.google.ba https://adservice.google.be https://adservice.google.bf https://adservice.google.bg https://adservice.google.bi https://adservice.google.bj https://adservice.google.bs https://adservice.google.bt https://adservice.google.by https://adservice.google.ca https://adservice.google.cat https://adservice.google.cd https://adservice.google.cf https://adservice.google.cg https://adservice.google.ch https://adservice.google.ci https://adservice.google.cl https://adservice.google.cm https://adservice.google.cn https://adservice.google.co.ao https://adservice.google.co.bw https://adservice.google.co.ck https://adservice.google.co.cr https://adservice.google.co.id https://adservice.google.co.il https://adservice.google.co.in https://adservice.google.co.jp https://adservice.google.co.ke https://adservice.google.co.kr https://adservice.google.co.ls https://adservice.google.co.ma https://adservice.google.co.mz https://adservice.google.co.nz https://adservice.google.co.th https://adservice.google.co.tz https://adservice.google.co.ug https://adservice.google.co.uk https://adservice.google.co.uz https://adservice.google.co.ve https://adservice.google.co.vi https://adservice.google.co.za https://adservice.google.co.zm https://adservice.google.co.zw https://adservice.google.com https://adservice.google.com.af https://adservice.google.com.ag https://adservice.google.com.ai https://adservice.google.com.ar https://adservice.google.com.au https://adservice.google.com.bd https://adservice.google.com.bh https://adservice.google.com.bn https://adservice.google.com.bo https://adservice.google.com.br https://adservice.google.com.bz https://adservice.google.com.co https://adservice.google.com.cu https://adservice.google.com.cy https://adservice.google.com.do https://adservice.google.com.ec https://adservice.google.com.eg https://adservice.google.com.et https://adservice.google.com.fj https://adservice.google.com.gh https://adservice.google.com.gi https://adservice.google.com.gt https://adservice.google.com.hk https://adservice.google.com.jm https://adservice.google.com.kh https://adservice.google.com.kw https://adservice.google.com.lb https://adservice.google.com.ly https://adservice.google.com.mm https://adservice.google.com.mt https://adservice.google.com.mx https://adservice.google.com.my https://adservice.google.com.na https://adservice.google.com.nf https://adservice.google.com.ng https://adservice.google.com.ni https://adservice.google.com.np https://adservice.google.com.om https://adservice.google.com.pa https://adservice.google.com.pe https://adservice.google.com.pg https://adservice.google.com.ph https://adservice.google.com.pk https://adservice.google.com.pr https://adservice.google.com.py https://adservice.google.com.qa https://adservice.google.com.sa https://adservice.google.com.sb https://adservice.google.com.sg https://adservice.google.com.sl https://adservice.google.com.sv https://adservice.google.com.tj https://adservice.google.com.tr https://adservice.google.com.tw https://adservice.google.com.ua https://adservice.google.com.uy https://adservice.google.com.vc https://adservice.google.com.vn https://adservice.google.cv https://adservice.google.cz https://adservice.google.de https://adservice.google.dj https://adservice.google.dk https://adservice.google.dm https://adservice.google.dz https://adservice.google.ee https://adservice.google.es https://adservice.google.fi https://adservice.google.fm https://adservice.google.fr https://adservice.google.ga https://adservice.google.ge https://adservice.google.gg https://adservice.google.gl https://adservice.google.gm https://adservice.google.gp https://adservice.google.gr https://adservice.google.gy https://adservice.google.hn https://adservice.google.hr https://adservice.google.ht https://adservice.google.hu https://adservice.google.ie https://adservice.google.im https://adservice.google.iq https://adservice.google.is https://adservice.google.it https://adservice.google.je https://adservice.google.jo https://adservice.google.kg https://adservice.google.ki https://adservice.google.kz https://adservice.google.la https://adservice.google.li https://adservice.google.lk https://adservice.google.lt https://adservice.google.lu https://adservice.google.lv https://adservice.google.md https://adservice.google.me https://adservice.google.mg https://adservice.google.mk https://adservice.google.ml https://adservice.google.mn https://adservice.google.ms https://adservice.google.mu https://adservice.google.mv https://adservice.google.mw https://adservice.google.ne https://adservice.google.nl https://adservice.google.no https://adservice.google.nr https://adservice.google.nu https://adservice.google.pl https://adservice.google.pn https://adservice.google.ps https://adservice.google.pt https://adservice.google.ro https://adservice.google.rs https://adservice.google.ru https://adservice.google.rw https://adservice.google.sc https://adservice.google.se https://adservice.google.sh https://adservice.google.si https://adservice.google.sk https://adservice.google.sm https://adservice.google.sn https://adservice.google.so https://adservice.google.sr https://adservice.google.st https://adservice.google.td https://adservice.google.tg https://adservice.google.tk https://adservice.google.tl https://adservice.google.tm https://adservice.google.tn https://adservice.google.to https://adservice.google.tt https://adservice.google.vg https://adservice.google.vu https://adservice.google.ws https://*.hypercomments.com https://*.yandex.ru https://*.yastatic.net https://*.megaflowers.ru https://*.vk.me https://*.youtube.com https://*.ytimg.com https://sun9-37.userapi.com https://telegram.org https://platform.twitter.com https://platform.twitter.com https://www.googletagmanager.com https://region1.google-analytics.com https://www.paypal.com https://www.paypalobjects.com http://matrixcalc.mcdir.ru; frame-src *" />
+
+  
+
+  <style> address,aside,main,section,header,footer,nav{display:block;}address{font-style:normal;}input,textarea,select{touch-action:manipulation;}button{display:inline-block;padding:2px 12px;margin:1px;line-height:20px;color:#333333;color:var(--color-button);text-align:center;vertical-align:middle;cursor:pointer;background-color:hsl(0, 100%, 52%);background-image:linear-gradient(to bottom,hsl(0,0%,100%),hsl(0,0%,90%));border:1px solid;border-color:silver;border-bottom-color:darkgray;border-radius:2px;box-shadow:inset 0px 1px 0px hsla(0,0%,100%,0.2),0px 1px 2px hsla(0,0%,0%,0.05);}button:disabled,button:hover:disabled{color:#555555;opacity:0.7;box-shadow:none;}select,textarea,input[type="number"],input[type="text"],[contenteditable]{width:206px;display:inline-block;height:26px;padding-top:2px;padding-bottom:2px;margin:1px;font-size:15px;line-height:20px;color:#242424;color:var(--color-text);vertical-align:middle;border-radius:2px;background-color:white;background-color:var(--color-input-background);border:1px solid;border-color:silver;box-shadow:inset 0px 1px 1px hsla(0,0%,0%,0.075);}input[type="number"]:not(.matrix-table-input){width:5em;}textarea{padding-right:0px;padding-bottom:0px;height:auto;resize:both;}input[type="number"]:not(.matrix-table-input){padding:0px;padding-left:6px;padding-right:0px;line-height:24px;}html[dir="rtl"] input[type="number"]:not(.matrix-table-input){padding-left:0px;padding-right:6px;}:root{--color-focus:#4D90FE;--color-text:#242424;--color-button:#333333;--color-background:white;--color-input-background:white;--color-links:#3C78C2;--color-dark-background:whitesmoke;--spatial-navigation-action:focus;font-family:sans-serif;color-scheme:light dark;}html{scroll-behavior:smooth;color:#242424;color:var(--color-text);padding:12px;padding-top:0px;padding-bottom:0px;overflow-y:scroll;background-color:white;background-color:var(--color-background);background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 60 40"><g stroke="ghostwhite" stroke-width="1" stroke-linecap="square"><line x1="0.5" y1="19.5" x2="59.5" y2="19.5" /><line x1="0.5" y1="39.5" x2="59.5" y2="39.5" /><line x1="19.5" y1="0.5" x2="19.5" y2="39.5" /><line x1="39.5" y1="0.5" x2="39.5" y2="39.5" /><line x1="59.5" y1="0.5" x2="59.5" y2="39.5" /></g></svg>');background-size:60px 40px;background-position:-1px -1px;font-size:17px;line-height:1.5;}mrow[tabindex],mtd[tabindex],img[tabindex],a,summary{color:#3C78C2;color:var(--color-links);text-decoration:none;}div[tabindex],mrow[tabindex][data-matrix]{color:#242424;color:var(--color-text);}input,textarea,select,button,optgroup,option{font-size:15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}body{padding:0px;margin:0px;max-width:1444px;min-width:min-content;margin-left:auto;margin-right:auto;}#bigtable{max-width:calc(100vw - 24px);}label,input[type="checkbox"],button{cursor:pointer;}#header{display:table;width:100%;padding:2px 0px;border-bottom:1px solid;border-color:#999999;margin-bottom:12px;}#logo{font-family:cursive;font-size:128%;font-weight:bold;display:table-cell;vertical-align:middle;}#language{vertical-align:middle;display:table-cell;width:1px;position:relative;}#bigtable{display:table;width:100%;table-layout:fixed;}#left{display:table-cell;vertical-align:top;align-self:start;width:200px;flex-shrink:0;}#right{display:table-cell;vertical-align:top;align-self:start;padding:8px;padding-top:0px;}#footer{margin-top:24px;padding-top:4px;border-top:1px solid;border-color:#999999;}#resdiv{vertical-align:middle;padding-left:2px;padding-right:2px;border:0px;position:relative;border-bottom:1px solid;border-color:silver;}.menu{width:100%;margin-bottom:12px;}.menu > a,.menu > b{padding:4px;min-height:20px;display:block;}.line{display:table;width:100%;padding:0px;}.line > div{display:table-cell;line-height:28px;}.line > div + div{white-space:nowrap;width:1px;}.bbox > span{display:inline-block;}.change-button{height:auto;width:auto;}.bbox > button,.bbox > div > button{width:13em;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}.bbox > .button-before-input > button{width:10.5em;}.bbox > .button-before-input > .a-input > input,.bbox > .button-before-input > input{width:2.5em;}.determinant-expression select,.determinant-expression input{vertical-align:baseline;}.button-after-input,.button-before-input{white-space:nowrap;}.button-after-input > .a-input > input,.button-after-input > input,.button-before-input > button{margin-right:0px;border-right-width:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}.button-after-input > button,.button-before-input > input,.button-before-input > .a-input > input{margin-left:0px;border-top-left-radius:0px;border-bottom-left-radius:0px;}.expression-input-container > .button-after-input > input{width:21em;}.expression-input-container > .button-after-input > .a-input > input{width:21em;max-width:100%;z-index:1;}.expression-input-container > .button-after-input > .a-input{max-width:96%;max-width:calc(100% - 4em);}@supports (display:flex){.expression-input-container > .button-after-input{display:flex;justify-content:center;}.expression-input-container > .button-after-input > .a-input{max-width:initial;}}.expression-input-container{text-align:center;}.div-nowrap{white-space:nowrap;}.nowrap{display:inline-block;white-space:nowrap;}.bbox2 > div > button{width:6em;}.bbox2 > div > button > .operator{display:inline-block;width:1em;}p{margin:1ex 0em;}li > h2{color:brown;margin:0;padding:0;margin-top:1.5ex;}strong{color:#CC3333;}button{height:26px;}.main{display:table;width:100%;border-spacing:0px;border:0px;text-align:center;empty-cells:show;}.main > div{display:table-cell;vertical-align:middle;align-self:center;text-align:center;border:0px;padding:2px;margin:0px;flex-basis:0;flex-grow:1;}.main > div.tdmatrix{width:46%;flex-basis:0;flex-grow:9999;vertical-align:top;align-self:start;}@supports (display:flex){#bigtable{display:flex;}#right{flex-grow:1;}#main{max-width:calc(100vw - 246px);}.main{display:flex;flex-wrap:wrap;}.main > div.tdmatrix{width:auto;}.main > div{display:block;}}.top{vertical-align:top;}.matrix-table-cell{vertical-align:middle;font-style:normal;}.matrix-table-cell > span{overflow:hidden;background-color:white;background-color:var(--color-background);display:inline-block;padding:1px 3px;vertical-align:middle;}.matrix-table-input[type="number"],.matrix-table-input[type="text"]{margin:1px;text-align:right;max-width:3.8em;min-width:3.8em;width:100em;}.matrix-table > div{position:relative;}textarea[wrap="off"]{white-space:pre;word-wrap:normal;}.matrix-table-textarea{overflow:auto;width:100%;min-width:230px;min-height:90px;-o-tab-size:4;-moz-tab-size:4;tab-size:4;}.menu-dialog{margin:0px;padding:0px;z-index:1;background-color:white;background-color:var(--color-background);border:1px solid;border-color:silver;list-style:none;box-shadow:0px 3px 12px hsla(0,0%,0%,0.375);}.menu-dialog{display:none;}.menu-dialog:popover-open,.menu-dialog[open]{display:block;}#matrix-menu-dialog{margin:0px 0px 0px -6px;}html[dir="rtl"] #matrix-menu-dialog{margin:0px -6px 0px 0px;}.menuitem{padding:0.5ex 0.5em;display:block;}.menuitem[tabindex]{font-size:smaller;white-space:nowrap;cursor:pointer;color:#333333;color:var(--color-button);}.menuitem:hover{background-color:#BBBBCC;}.menuitem:active{background-color:#9999BB;}#frdigits{width:5em;vertical-align:baseline;}#rounding-type{vertical-align:baseline;width:auto;}.ads-container{text-align:center;overflow:hidden;}.matrix-table-inner{display:inline-block;margin:0ex 0.1em;padding:4px 0px;white-space:nowrap;}.matrix-table-inner mtable{white-space:nowrap;}.matrix-table-input[type="number"],.matrix-table-input[type="text"]{margin:0px 1px;}input[type="number"].matrix-table-input::-webkit-inner-spin-button{display:none;}.matrix-table-input[type="number"].far,.matrix-table-input[type="text"].far{border-color:hsl(0deg 0% 92%);}button[aria-pressed="true"]{box-shadow:inset 0px 0px 20px hsla(206,100%,75%,0.5);}@media screen and (max-width:800px){html{padding:1px;padding-top:0px;padding-bottom:0px;}#bigtable{max-width:100vw;}#bigtable,#left,#right{display:block;width:auto;}#right{padding-left:0px;padding-right:0px;max-width:none;}.ads-container{display:none;}.matrix-table-textarea{min-width:200px;}}@media screen and (max-width:480px){.main{display:block;}.main > div.tdmatrix,.main > div{width:auto;display:inline-block;}}@media screen and (max-width:360px){.matrix-table-inner mo{padding:0 1px;}}.input-example-code{padding:0.809em;}.input-example-code > span{display:block;}#results-container{position:relative;margin:0px;padding:0px;list-style:none;}[hidden]{display:none;}input[type="text"][hidden]{display:none;}#examples > details > ul > li > a{display:inline-block;}math{display:inline-block;}math[display="block"]{display:block;padding:0.5ex 1em;text-align:left;}@supports(display:block math){math{display:inline math;}math[display="block"]{display:block math;}}munder{text-align:center;}fieldset{border:none;margin:0px;padding:0px;display:flex;flex-direction:column;}legend[align="center"]{align-self:center;}.insert-table[data-type="system"]{margin:2ex 1em;}.insert-table[data-type="system"] > div + div{margin:0 1em;}.inline-block{display:inline-block;}.show-textarea{width:18em;height:18em;}.more-fieldset{border:1px solid;border-color:silver;padding:0.5em;margin-bottom:0.5em;display:inline-flex;flex-direction:column;}.more-fieldset > button{width:14em;height:auto;}#language-popup-button{width:36px;height:30px;padding:0;}#language-popup-button > .icon{display:block;height:100%;background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 96 96"><path fill="%234183c4" d="M44 54h-1l-1-1-3-1-1-1-2-1a64 64 0 0 1-8 10h-1l3-3 3-4 2-4 2-4 1-2a24 24 0 0 0-4 1h-2v1l-1 1h-2l-1-1v-1h2l3-1 4-1 1-1 2-1h1v2l-1 1-1 2-2 4 2 1 2 1 2 1 1 1v1zm-7-16v1l-2 1h-2l-1-1-1-1h4l2-1v1zm24 4 2 8-5-2 3-6zM24 69l23-8V27l-23 7v35zm41-11 3 1-6-22-3-1-7 18 3 1 2-4 7 3 1 4zM48 26l19 6V20l-19 6zm11 44 5 1-2 5-1-2-9 4h-6l-7-1-6-3v-1h1l1 1h1l5 2 5 1 6-1 5-1 1-1h1l1-1-1-3zm15-36v36l-26-8-13 5-12 4-1-1V34l1-1 5-1V19l19 6 5-2 11-3 5-2 1 1v14l5 1z"/></svg>');background-size:48px 40px;background-repeat:no-repeat;background-position:center center;}#language-popup{position:absolute;right:1px;top:auto;left:auto;width:auto;max-height:calc(100vh - 3em - 8.48px);overflow:auto;overflow-x:hidden;padding:0px;min-width:6.9em;transform-origin:top right;}html[dir="rtl"] #language-popup{right:auto;left:1px;}[aria-current="page"]:after{content:" \2713";line-height:0.5em;}input[list="exponentiation-list"]::-webkit-calendar-picker-indicator{display:none !important;}input[list="expressions-list"]:empty::-webkit-calendar-picker-indicator{opacity:100;}@supports (pointer-events:none){.expression-input-container .a-input:after{content:"▼";position:absolute;right:0;top:0;bottom:0;display:flex;align-items:center;pointer-events:none;}}@supports selector(input::-webkit-calendar-picker-indicator){.expression-input-container .a-input:after{content:"";}}.list-unstyled{list-style:none;}.fraction-input{text-align:center;}.a-input{background-color:white;background-color:var(--color-background);font-style:normal;background-color:white;background-color:var(--color-input-background);border-radius:2px;}@media (hover:none){select,textarea,input[type="number"],input[type="text"],[contenteditable],button{height:30px;}}@media (prefers-color-scheme:dark){:root{--color-text:white;--color-button:white;--color-background:#38444C;--color-input-background:hsl(204deg 15.15% 20.88%);--color-links:bisque;--color-dark-background:hsl(204deg 15.15% 20.88%);--color-focus:#4D90FE;font-family:sans-serif;font-size:16px;}button{background-image:none;background-color:black;}html{background-image:none;}#hypercomments_widget .hc__message__txt{color:white;}img[tabindex]{background-color:white;}.input-error-wrapper > .input-error-position > span{background-color:black;}.question-icon-new{background-color:antiquewhite;color:black;}.matrix-table-input[type="number"].far,.matrix-table-input[type="text"].far{border-color:gray;}.icon{filter:invert(1);}#language-popup-button > .icon{filter:brightness(10);}}@keyframes blink{0%{box-shadow:0 0 3px 12px #966eb3;}100%{box-shadow:0 0 3px 12px transparent;}}input:target,button:target{box-shadow:0 0 3px 12px #966eb3;animation:blink 1.0s linear 2;}input[type="number"]::-webkit-inner-spin-button{height:24px;opacity:1;}mn:has(> span){display:inline-block;}.arrows kbd{margin-right:0;}.arrows span{display:inline-block;}.arrows span > kbd:first-child{display:block;}.insert-table{display:flex;flex-direction:column;justify-content:center;}.insert-table{min-height:128.41px;}.insert-table[data-sizes="4x4"]{min-height:166.13px;}.insert-table[data-sizes="4x5"]{min-height:159.5px;}#resdiv{min-height:156.5px;}h1,h2,h3,h4,h5,h6{margin:2px;padding:0em 1em;font-weight:normal;font-family:inherit;text-align:inherit;}h1{font-size:156%;text-align:center;}</style>
+
+
+  <script>(function(){"use strict";function MatrixTableBase(){}MatrixTableBase.initialize=function(container,type,name){var content=document.getElementById("insert-table-template").cloneNode(true);var matrixTableInner=content.firstElementChild;var toolbar=content.lastElementChild;var textarea=matrixTableInner.querySelector("textarea");var placeholder="";if(type==="system"){var or=document.getElementById("i18n-or").textContent;placeholder="-2x+2y-3z=0    __    -2  2 -3  0\n -x+ y-3z=0    ⁨OR⁩    -1  1 -3  0\n 2x+0y- z=0    __     2  0 -1  0\n".replaceAll("__",or.replace(/\S/g," ")).replaceAll("OR",or)}else{placeholder=""+"-2  2 -3\n"+"-1  1  3\n"+" 2  0 -1/3"}textarea.placeholder=placeholder;container.appendChild(matrixTableInner);container.appendChild(toolbar);var setParentheses=function(open,close){var updateMo=function(mo,content){if(content===""){mo.parentNode.removeChild(mo)}else{mo.textContent=content}};var updateMrow=function(c){var mrow=c.querySelector("mrow");updateMo(mrow.firstElementChild,open);updateMo(mrow.lastElementChild,close)};updateMrow(matrixTableInner.querySelector(".table-container"));updateMrow(matrixTableInner.querySelector(".textarea-container"))};if(type==="system"){setParentheses("{","")}var textareaName=name+"-textarea";textarea.id=textareaName;textarea.name=textareaName;container.classList.toggle("matrix-table",true)};MatrixTableBase.onKeyDown=null;MatrixTableBase.onInput=null;MatrixTableBase._onKeyDown=function(event){MatrixTableBase.onKeyDown(event)};MatrixTableBase._onInput=function(event){MatrixTableBase.onInput(event)};function makeContent(variableName){var i=variableName.indexOf("_");if(i===-1){return"<mi>"+variableName+"</mi>"}return"<msub><mi>"+variableName.slice(0,i)+"</mi><mn>"+variableName.slice(i+1)+"</mn></msub>"}MatrixTableBase.makeContent=makeContent;MatrixTableBase.addMoreCells=function(tbody,type,rows,cols,tableName,variableNames){var table=new Array(rows);var MathML="http://www.w3.org/1998/Math/MathML";var row=tbody.firstElementChild;for(var i=0;i<rows;i+=1){table[i]=new Array(cols);if(row==null){row=document.createElementNS(MathML,"mtr");tbody.appendChild(row)}row.style.setProperty("display","");var cell=row.firstElementChild;for(var j=0;j<cols;j+=1){if(cell==null){cell=document.createElementNS(MathML,"mtd");cell.style.setProperty("padding","0");if(type==="system"){if(j>0){var mo=document.createElementNS(MathML,"mo");mo.setAttribute("form","infix");mo.textContent="+";cell.appendChild(mo)}}var mi=document.createElementNS(MathML,"mi");cell.appendChild(mi);var aInput=document.getElementById("input-template").firstElementChild.cloneNode(true);var inputName=tableName+"-"+i+"-"+j;var ariaLabel=tableName.toLowerCase()+" "+(i+1)+" "+(j+1);aInput.title=tableName.toLowerCase()+"_("+(i+1)+","+(j+1)+")";var input=aInput.querySelector(".matrix-table-input");input.id=inputName;input.name=inputName;input.setAttribute("aria-label",ariaLabel);input.setAttribute("data-for",tableName);input.addEventListener("beforeinput",MatrixTableBase._onKeyDown,false);input.addEventListener("keydown",MatrixTableBase._onKeyDown,false);input.addEventListener("input",MatrixTableBase._onInput,false);mi.appendChild(aInput);if(type==="system"){var mo=document.createElementNS(MathML,"mo");mo.innerHTML="&it;";var mrow=document.createElementNS(MathML,"mrow");cell.appendChild(mo);cell.appendChild(mrow)}row.appendChild(cell);input.style.maxWidth="6.333ch";input.style.minWidth="6.333ch";input.classList.toggle("far",true)}cell.style.setProperty("display","");if(type==="system"){var cellType=i===0&&j<cols-1?"coefficient+editable":i!==0&&j<cols-1?"coefficient":"constant";var variableName=cellType!=="constant"?variableNames!=null?variableNames[j]:"x_"+(j+1):undefined;var cellState=cellType+":"+variableName+":"+j;if(cell.getAttribute("data-cell-state")!==cellState){cell.setAttribute("data-cell-state",cellState);if(j>0){cell.firstElementChild.textContent=cellType!=="constant"?"+":"="}var cellHTML=(cellType==="coefficient+editable"?'<mi><span class="editable-on-click" data-index="'+j+'" data-value="'+variableName+'"><math>'+makeContent(variableName)+"</math></span></mi>":"")+(cellType==="coefficient"?makeContent(variableName):"")+(cellType==="constant"?"<mtext>&nbsp;</mtext>":"");cell.lastElementChild.innerHTML=cellHTML}}var input=cell.querySelector(".matrix-table-input");table[i][j]=input;cell=cell.nextElementSibling}row=row.nextElementSibling}return table};MatrixTableBase.deleteExtraCells=function(tbody,type,rows,cols){var clearRow=function(row,cell){var c=row.lastElementChild;while(c!==cell){c.style.setProperty("display","none");c=c.previousElementSibling}};var row=tbody.firstElementChild;for(var i=0;i<rows;i+=1){var cell=row.firstElementChild;for(var j=0;j<cols;j+=1){cell=cell.nextElementSibling}if(cell!=null){cell=cell.previousElementSibling;clearRow(row,cell)}row=row.nextElementSibling}if(row!=null){row=row.previousElementSibling;var r=tbody.lastElementChild;while(r!==row){clearRow(r,null);r.style.setProperty("display","none");r=r.previousElementSibling}}};function initTable(e){var id=e.getAttribute("data-id");var sizes=e.getAttribute("data-sizes")||"3x3";var type=e.getAttribute("data-type")||"simple";var rows=3;var cols=3;var match=/^(\d+)x(\d+)$/.exec(sizes);if(match!=undefined){rows=Number(match[1]);cols=Number(match[2])}var ok=true;var stateKey1=id+"1";var historyState=window.history.state;if(historyState!=null&&historyState[stateKey1]!=null){ok=false}if(ok&&e.querySelector(".matrix-table-inner")==null){MatrixTableBase.initialize(e,type,id);var tbody=e.querySelector("mtable");MatrixTableBase.addMoreCells(tbody,type,rows,cols,id,undefined);var isCellsMode=window.matchMedia("(pointer: fine)").matches;e.querySelector(".table-container").hidden=!isCellsMode;e.querySelector(".textarea-container").hidden=isCellsMode}}function onDOMReady(){var c=document.body.classList;c.toggle("no-linebreaking",true);c.toggle("no-stretchy-macron",true);c.toggle("no-draggable",true);var es=document.querySelectorAll(".insert-table");for(var i=0;i<es.length;i+=1){initTable(es[i])}}if(document.readyState==="interactive"||document.readyState==="complete"){onDOMReady(null)}else{document.addEventListener("DOMContentLoaded",onDOMReady,{once:true})}window.MatrixTableBase=MatrixTableBase})();</script>
+
+  <link rel="preload" href="../mcss.css?20230912T102813Z" as="style" fetchpriority="low" />
+  <link rel="preload" href="./i18n-pt.json?20230912T102813Z" as="fetch" crossorigin="anonymous" fetchpriority="high" />
+  <script async src="../mjs.js?20230912T102813Z" fetchpriority="high"></script>
+  
+  <script>
+  if (window.Worker && typeof BigInt !== 'undefined') {
+    window.expressionWorker = new Worker('../compiled.expression.js?20230912T102813Z');
+  }
+  </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var link = document.createElement('link');
+    link.href = '../mcss.css?20230912T102813Z';
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(link);
+  }, false);
+  </script>
+
+  <link rel="alternate" href="https://matrixcalc.org/ar/slu.html" hreflang="ar" />
+  <link rel="alternate" href="https://matrixcalc.org/bg/slu.html" hreflang="bg" />
+  <link rel="alternate" href="https://matrixcalc.org/ca/slu.html" hreflang="ca" />
+  <link rel="alternate" href="https://matrixcalc.org/cs/slu.html" hreflang="cs" />
+  <link rel="alternate" href="https://matrixcalc.org/de/slu.html" hreflang="de" />
+  <link rel="alternate" href="https://matrixcalc.org/slu.html" hreflang="en" />
+  <link rel="alternate" href="https://matrixcalc.org/es/slu.html" hreflang="es" />
+  <link rel="alternate" href="https://matrixcalc.org/fa/slu.html" hreflang="fa" />
+  <link rel="alternate" href="https://matrixcalc.org/fr/slu.html" hreflang="fr" />
+  <link rel="alternate" href="https://matrixcalc.org/gl/slu.html" hreflang="gl" />
+  <link rel="alternate" href="https://matrixcalc.org/he/slu.html" hreflang="he" />
+  <link rel="alternate" href="https://matrixcalc.org/id/slu.html" hreflang="id" />
+  <link rel="alternate" href="https://matrixcalc.org/it/slu.html" hreflang="it" />
+  <link rel="alternate" href="https://matrixcalc.org/ja/slu.html" hreflang="ja" />
+  <link rel="alternate" href="https://matrixcalc.org/ko/slu.html" hreflang="ko" />
+  <link rel="alternate" href="https://matrixcalc.org/mk/slu.html" hreflang="mk" />
+  <link rel="alternate" href="https://matrixcalc.org/nl/slu.html" hreflang="nl" />
+  <link rel="alternate" href="https://matrixcalc.org/no/slu.html" hreflang="no" />
+  <link rel="alternate" href="https://matrixcalc.org/pl/slu.html" hreflang="pl" />
+  <link rel="alternate" href="https://matrixcalc.org/ro/slu.html" hreflang="ro" />
+  <link rel="alternate" href="https://matrixcalc.org/ru/slu.html" hreflang="ru" />
+  <link rel="alternate" href="https://matrixcalc.org/sk/slu.html" hreflang="sk" />
+  <link rel="alternate" href="https://matrixcalc.org/th/slu.html" hreflang="th" />
+  <link rel="alternate" href="https://matrixcalc.org/tr/slu.html" hreflang="tr" />
+  <link rel="alternate" href="https://matrixcalc.org/uk/slu.html" hreflang="uk" />
+  <link rel="alternate" href="https://matrixcalc.org/ur/slu.html" hreflang="ur" />
+  <link rel="alternate" href="https://matrixcalc.org/vi/slu.html" hreflang="vi" />
+  <link rel="alternate" href="https://matrixcalc.org/zh-CN/slu.html" hreflang="zh-CN" />
+  <link rel="alternate" href="https://matrixcalc.org/zh-TW/slu.html" hreflang="zh-TW" />
+  <link rel="canonical" href="https://matrixcalc.org/pt/slu.html" />
+
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="../favicon.ico" />
+  <link rel="icon" type="image/svg+xml" sizes="16x16" href="../favicon.svg" />
+  <link rel="apple-touch-icon" href="../imgs/launcher-192x192.png" />
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["MathSolver","LearningResource"],"name":"Calculadora de Matrizes","url":"https://matrixcalc.org/pt/","usageInfo":"https://matrixcalc.org/privacy.html","inLanguage":"pt","potentialAction":[{"@type":"SolveMathAction","target":"https://matrixcalc.org/pt/#{math_expression_string}","mathExpression-input":"required name=math_expression_string","eduQuestionType":["Linear Algebra","Matrix","System of Equations","Eigenvector","Eigenvalue","Characteristic Polynomial","Arithmetic","Algebra","Biquadratic Equation","Function","Linear Equation","Linear Expression","Radical Equation","Radical Expression","Polynomial Equation","Polynomial Expression","Quadratic Equation","Quadratic Expression","Rational Equation","Rational Expression"]}],"learningResourceType":"Math solver"}</script>
+
+  <title>Resolva sistemas de equações lineares online</title>
+  <meta name="description" content="Resolução de Sistemas de Equações Lineares (Método de la Matriz Inversa, Método de Eliminação de Gauss, Regla de Cramer), calcular o número de soluções" />
+</head>
+<body>
+<header id="header">
+  <div id="logo"><a href="./">Matrix calculator</a></div>
+  <nav id="language">
+    <button type="button" id="language-popup-button" class="popup-button" data-menu="language-popup" aria-haspopup="true" lang="en" title="Language" popovertarget="language-popup"><span class="icon"></span></button>
+    <div id="language-popup" class="menu-dialog" role="menu" popover="auto">
+      <a class="menuitem" role="menuitem" href="../ar/slu.html" hreflang="ar" title="Árabe"><span dir="rtl" lang="ar">العربية</span></a>
+      <a class="menuitem" role="menuitem" href="../bg/slu.html" hreflang="bg" title="Búlgaro"><span dir="ltr" lang="bg">Български</span></a>
+      <a class="menuitem" role="menuitem" href="../ca/slu.html" hreflang="ca" title="Catalão"><span dir="ltr" lang="ca">Català</span></a>
+      <a class="menuitem" role="menuitem" href="../cs/slu.html" hreflang="cs" title="Tcheco"><span dir="ltr" lang="cs">Čeština</span></a>
+      <a class="menuitem" role="menuitem" href="../de/slu.html" hreflang="de" title="Alemão"><span dir="ltr" lang="de">Deutsch</span></a>
+      <a class="menuitem" role="menuitem" href="../slu.html" hreflang="en" title="Inglês"><span dir="ltr" lang="en">English</span></a>
+      <a class="menuitem" role="menuitem" href="../es/slu.html" hreflang="es" title="Espanhol"><span dir="ltr" lang="es">Español</span></a>
+      <a class="menuitem" role="menuitem" href="../fa/slu.html" hreflang="fa" title="Persa"><span dir="rtl" lang="fa">فارسی</span></a>
+      <a class="menuitem" role="menuitem" href="../fr/slu.html" hreflang="fr" title="Francês"><span dir="ltr" lang="fr">Français</span></a>
+      <a class="menuitem" role="menuitem" href="../gl/slu.html" hreflang="gl" title="Galego"><span dir="ltr" lang="gl">Galego</span></a>
+      <a class="menuitem" role="menuitem" href="../he/slu.html" hreflang="he" title="Hebraico"><span dir="rtl" lang="he">עברית</span></a>
+      <a class="menuitem" role="menuitem" href="../id/slu.html" hreflang="id" title="Indonésio"><span dir="ltr" lang="id">Indonesia</span></a>
+      <a class="menuitem" role="menuitem" href="../it/slu.html" hreflang="it" title="Italiano"><span dir="ltr" lang="it">Italiano</span></a>
+      <a class="menuitem" role="menuitem" href="../ja/slu.html" hreflang="ja" title="Japonês"><span dir="ltr" lang="ja">日本語</span></a>
+      <a class="menuitem" role="menuitem" href="../ko/slu.html" hreflang="ko" title="Coreano"><span dir="ltr" lang="ko">한국어</span></a>
+      <a class="menuitem" role="menuitem" href="../mk/slu.html" hreflang="mk" title="Macedônio"><span dir="ltr" lang="mk">Македонски</span></a>
+      <a class="menuitem" role="menuitem" href="../nl/slu.html" hreflang="nl" title="Holandês"><span dir="ltr" lang="nl">Nederlands</span></a>
+      <a class="menuitem" role="menuitem" href="../no/slu.html" hreflang="no" title="Norueguês"><span dir="ltr" lang="no">Norsk</span></a>
+      <a class="menuitem" role="menuitem" href="../pl/slu.html" hreflang="pl" title="Polonês"><span dir="ltr" lang="pl">Polski</span></a>
+      <a class="menuitem" role="menuitem" href="../pt/slu.html" hreflang="pt" title="Português" aria-current="page"><span dir="ltr" lang="pt">Português</span></a>
+      <a class="menuitem" role="menuitem" href="../ro/slu.html" hreflang="ro" title="Romeno"><span dir="ltr" lang="ro">Română</span></a>
+      <a class="menuitem" role="menuitem" href="../ru/slu.html" hreflang="ru" title="Russo"><span dir="ltr" lang="ru">Русский</span></a>
+      <a class="menuitem" role="menuitem" href="../sk/slu.html" hreflang="sk" title="Eslovaco"><span dir="ltr" lang="sk">Slovenčina</span></a>
+      <a class="menuitem" role="menuitem" href="../th/slu.html" hreflang="th" title="Tailandês"><span dir="ltr" lang="th">ไทย</span></a>
+      <a class="menuitem" role="menuitem" href="../tr/slu.html" hreflang="tr" title="Turco"><span dir="ltr" lang="tr">Türkçe</span></a>
+      <a class="menuitem" role="menuitem" href="../uk/slu.html" hreflang="uk" title="Ucraniano"><span dir="ltr" lang="uk">Українська</span></a>
+      <a class="menuitem" role="menuitem" href="../ur/slu.html" hreflang="ur" title="Urdu"><span dir="rtl" lang="ur">اردو</span></a>
+      <a class="menuitem" role="menuitem" href="../vi/slu.html" hreflang="vi" title="Vietnamita"><span dir="ltr" lang="vi">Tiếng Việt</span></a>
+      <a class="menuitem" role="menuitem" href="../zh-CN/slu.html" hreflang="zh-CN" title="Chinês (China)"><span dir="ltr" lang="zh-CN">中文(简体)</span></a>
+      <a class="menuitem" role="menuitem" href="../zh-TW/slu.html" hreflang="zh-TW" title="Chinês (Taiwan)"><span dir="ltr" lang="zh-TW">中文(繁體)</span></a>
+
+    </div>
+  </nav>
+</header>
+
+<div id="bigtable">
+  <div id="left">
+    <nav class="menu"><a href="./">Operações envolvendo matrizes</a><a href="slu.html">Soluções de Sistemas de Equações Lineares</a><a href="det.html">Calculadora de determinantes</a><a href="vectors.html">Cálculo dos autovalores próprios e vectores próprios</a><a href="https://pt.wikipedia.org/wiki/Matriz_(matemática)">Teoria necessária</a></nav>
+
+
+
+
+    <aside>
+      <div class="ads-container"></div>
+    </aside>
+
+  </div>
+<div id="right">
+<main>
+<h1>Soluções de Sistemas de Equações Lineares</h1>
+<p>Entre os coeficientes de seu sistema, deixe os campos em branco se as variáveis não participam nos equações.</p>
+<form class="main-form">
+  <fieldset>
+    <legend>O sistema de equações:</legend>
+    <div class="insert-table" data-id="A" data-sizes="4x5" data-type="system"></div>
+  </fieldset>
+  <div style="margin-bottom: 2ex;">
+    <select name="solveExpression" class="an-autocomplete" autocomplete="on" style="width:32ch;max-width:90vw;">
+      <option value="solve-using-Gaussian-elimination A">Solução utilizando o Método de Gauss</option>
+      <option value="solve-using-Gauss-Jordan-elimination A">Solução utilizando o Método de Gauss-Jordan</option>
+      <option value="solve-using-Cramer's-rule A">Solução utilizando a Regra de Cramer</option>
+      <option value="solve-using-inverse-matrix-method A">Solução utilizando o Método de la Matriz Inversa</option>
+      <option value="solve-using-Montante-method A">Método de Montante</option>
+      <option value="solve-using-least-squares-method A">Resolva pelo método dos mínimos quadrados lineares</option>
+      <option value="analyse-compatibility A">Análise de existência de soluções</option>
+    </select><button type="submit" formnovalidate="formnovalidate">Resolver</button>
+  </div>
+</form>
+
+<div class="line">
+
+    <div class="decimal-fraction-digits-controls"><input type="checkbox" id="decfraccheckbox" /><label for="decfraccheckbox">Mostrar números decimais</label><span style="visibility:hidden" id="frdigitsspan"><span>, </span><label for="frdigits"><select id="rounding-type"><option value="fractionDigits" selected>número de dígitos fracionários: </option><option value="significantDigits">a quantidade de dígitos significantes: </option></select></label><input type="number" min="0" step="1" id="frdigits" value="3" /></span>
+    </div>
+
+    <div>
+      <button type="button" id="undo-clear-button" title="" hidden>↶</button><button type="button" class="clear-all-button">Limpar</button>
+    </div>
+</div>
+<section id="resdiv" aria-live="polite" aria-label="Resultados"></section>
+
+<ul>
+<li>
+  <div class="input-example-link-container"><a href="#">Mostrar um exemplo de sistema de entrada:</a></div>
+  <code class="input-example-code" translate="no" dir="ltr">
+    <span>2x-2y+z=-3</span>
+    <span>x+3y-2z=1</span>
+    <span>3x-y-z=2</span>
+  </code>
+</li>
+</ul>
+
+<p>Esta página permite resolver <a href="https://pt.wikipedia.org/wiki/Sistema_de_equações_lineares">sistemas de equações lineares</a> por o método de <a href="https://pt.wikipedia.org/wiki/Eliminação_de_Gauss">Eliminação de Gauss</a>, por o método de a Matix Inversa, por a <a href="https://pt.wikipedia.org/wiki/Regra_de_Cramer">Regra de Cramer</a>. Também você pode análisar a compatibilidade dos sistemas usando <a href="https://web.archive.org/web/20170621105539/http://www.igm.mat.br/aplicativos/index.php?option=com_content&amp;view=article&amp;id=165%3Afrobenius&amp;catid=41%3Aconteudosal&amp;Itemid=38">Teorema de Rouché–Frobenius</a> para determinar o número de soluções.</p>
+<section id="advices" aria-label="Conselhos">
+  <ul>
+    <li>Deixa <i>células vazias</i> para entrar de uma matriz não quadrada.</li>
+    <li>
+<details>
+  <summary>Você pode usar: decimais exatos, decimais periódicos: <code dir="ltr">1/3</code>, <code dir="ltr">3.14</code>, <code dir="ltr">-1.3(56)</code>, or <code dir="ltr">1.2e-4</code>; algumas expressões aritméticas: <code dir="ltr">2/3+3*(10-4)</code>, <code dir="ltr">(1+x)/y^2</code>, <code dir="ltr">2^0.5 (=<math><msqrt><mn>2</mn></msqrt></math>)</code>, <code dir="ltr">2^(1/3)</code>, <code dir="ltr">2^n</code>, <code dir="ltr">sin(phi)</code>, <code dir="ltr">cos(3.142rad)</code>, <code dir="ltr">a_1</code>, or <code dir="ltr">(root of x^5-x-1 near 1.2)</code>.</summary>
+  <ul>
+    <li>
+      <div>frações decimais (finitas e periódicas):</div>
+      <code dir="ltr">1/3</code>, <code dir="ltr">3.14</code>, <code dir="ltr">-1.3(56)</code>, or <code dir="ltr">1.2e-4</code>
+    </li>
+    <li>
+      <div>expressões matemáticas:</div>
+      <code dir="ltr">2/3+3*(10-4)</code>, <code dir="ltr">(1+x)/y^2</code>, <code dir="ltr">2^0.5 (=<math><msqrt><mn>2</mn></msqrt></math>)</code>, <code dir="ltr">2^(1/3)</code>, <code dir="ltr">2^n</code>, <code dir="ltr">sin(phi)</code>, <code dir="ltr">cos(3.142rad)</code>, <code dir="ltr">a_1</code>, or <code dir="ltr">(root of x^5-x-1 near 1.2)</code>
+    </li>
+    <li>
+      <div>literais de matriz:</div>
+      <code>{{1,3},{4,5}}</code>
+    </li>
+    <li>
+      <div>operadoras:</div>
+      <code dir="ltr">+</code>, <code dir="ltr">-</code>, <code dir="ltr">*</code>, <code dir="ltr">/</code>, <code dir="ltr">\</code>, <code dir="ltr">!</code>, <code dir="ltr">^</code>, <code dir="ltr">^{*}</code>, <code dir="ltr">,</code>, <code dir="ltr">;</code>, <code dir="ltr">≠</code>, <code dir="ltr">=</code>, <code dir="ltr">⩾</code>, <code dir="ltr">⩽</code>, <code dir="ltr">></code>, and <code dir="ltr"><</code>
+    </li>
+    <li>
+      <div>funções:</div>
+      <code dir="ltr">sqrt</code>, <code dir="ltr">cbrt</code>, <code dir="ltr">exp</code>, <code dir="ltr">log</code>, <code dir="ltr">abs</code>, <code dir="ltr">conjugate</code>, <code dir="ltr">arg</code>, <code dir="ltr">min</code>, <code dir="ltr">max</code>, <code dir="ltr">gcd</code>, <code dir="ltr">rank</code>, <code dir="ltr">adjugate</code>, <code dir="ltr">inverse</code>, <code dir="ltr">determinant</code>, <code dir="ltr">transpose</code>, <code dir="ltr">pseudoinverse</code>, <code dir="ltr">cos</code>, <code dir="ltr">sin</code>, <code dir="ltr">tan</code>, <code dir="ltr">cot</code>, <code dir="ltr">cosh</code>, <code dir="ltr">sinh</code>, <code dir="ltr">tanh</code>, <code dir="ltr">coth</code>, <code dir="ltr">arccos</code>, <code dir="ltr">arcsin</code>, <code dir="ltr">arctan</code>, <code dir="ltr">arccot</code>, <code dir="ltr">arcosh</code>, <code dir="ltr">arsinh</code>, <code dir="ltr">artanh</code>, <code dir="ltr">arcoth</code>, <code dir="ltr">derivative</code>, <code dir="ltr">factor</code>, and <code dir="ltr">resultant</code>
+    </li>
+    <li>
+      <div>unidades:</div>
+      <code>rad</code>, <code>deg</code>
+    </li>
+    <li>
+      <div>símbolos especiais:</div>
+      <ul>
+        <li><code>pi</code>, <code>e</code>, <code>i</code> — constantes matemáticas:</li>
+        <li><code>k</code>, <code>n</code> — inteiros</li>
+        <li><code>I</code> ou <code>E</code> — matriz identidade</li>
+        <li><code>X</code>, <code>Y</code> — símbolos de matriz</li>
+      </ul>
+    </li>
+  </ul>
+</details>
+    </li>
+    <li class="has-keyboard">Use <kbd>↵ Enter</kbd>, <kbd>Barra de espaço</kbd>, <span class="arrows"><kbd>←</kbd><span><kbd>↑</kbd><kbd>↓</kbd></span><kbd>→</kbd></span>, <kbd>Backspace</kbd>, and <kbd>Excluir</kbd> para percorrer as células, <kbd class="ctrl"><span>Ctrl</span><span>⌘ Cmd</span></kbd>+<kbd>C</kbd>/<kbd class="ctrl"><span>Ctrl</span><span>⌘ Cmd</span></kbd>+<kbd>V</kbd> - para copiar matrizes.</li>
+    <li>Arraste umas matrizes de resultados (<a href="https://pt.wikipedia.org/wiki/Drag-and-drop">Drag-and-drop</a>) ou de um editor de texto.</li>
+    <li>Para a teoria de matrizes e operações com elas, consulte a página da <a href="https://pt.wikipedia.org/wiki/Matriz_(matemática)">Wikipedia</a>.</li>
+  </ul>
+</section>
+
+</main>
+<div class="from-cookie" hidden></div>
+<div hidden>
+  <span id="i18n-or">ou</span>
+</div>
+
+<footer id="footer">
+  <address style="text-align: center;">
+    <a rel="nofollow author" href="mailto:matri-tri-ca@yandex.ru">matri-tri-ca@yandex.ru</a>
+  </address>
+  <aside style="text-align: center;">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=AX5FEG5UK5WEG" target="_blank" style="display: inline-block; background-color: var(--color-links); border-radius: 6px; padding: 1ex 0.5em; color: var(--color-background);" title="Support this website">&#9749; Support</a>
+  </aside>
+  <section id="thanks" lang="en" dir="ltr">
+    <details>
+      <summary>Thanks to:</summary>
+      <ul>
+        <li>Philip Petrov (<a href="https://cphpvb.net" hreflang="bg">https://cphpvb.net</a>) for Bulgarian translation</li>
+        <li>Manuel Rial Costa for Galego translation</li>
+        <li>Shio Kun for Chinese translation</li>
+        <li><a href="https://im-pmf-en.weebly.com/petar-sokoloski.html" hreflang="en">Petar Sokoloski</a> for Macedonian translation</li>
+        <li>Duy Thúc Trần for Vietnamese translation</li>
+        <li><a href="https://www.twitter.com/RKursatV" hreflang="en">Rıfkı Kürşat Vuruşan</a> for Turkish translation</li>
+        <li>Ousama Malouf and Yaseen Ibrahim for Arabic translation</li>
+        <li><a href="https://marcel-artz.de" hreflang="de">Marcel Artz</a> - improving of the German translation</li>
+        <li><a href="https://matricesydeterminantes.com" lang="es" hreflang="es" title="teoría relacionada con matrices y determinantes">Marc Gisbert Juàrez</a> - fixing the translation into Catalan</li>
+      </ul>
+    </details>
+  </section>
+
+</footer>
+
+<div id="js-hidden-element" style="position: fixed; top: 0px; left: 0px; white-space: nowrap; width: 0px; height: 0px; overflow: hidden; visibility: hidden; contain: strict;"></div>
+
+<div id="insert-table-template" hidden>
+  <div data-for="NAME" tabindex="-1" class="matrix-table-inner" dir="ltr">
+    <div class="table-container">
+      <math>
+        <mrow>
+          <mo>(</mo>
+          <mrow style="padding: 0.125em 0;">
+            <mtable columnalign="left">
+            </mtable>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </math>
+    </div>
+    <div class="textarea-container" hidden>
+      <math>
+        <mrow>
+          <mo>(</mo>
+          <mrow style="padding: 0.125em 0;">
+            <mi>
+              <span class="a-input">
+                <textarea id="TEXTAREA_NAME" name="TEXTAREA_NAME" wrap="off" autocapitalize="off" autocomplete="off"
+                          spellcheck="false" class="matrix-table-textarea unfocused-placeholder" placeholder=""></textarea>
+              </span>
+            </mi>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </math>
+    </div>
+  </div>
+  <div role="group"><button type="button" aria-pressed="mixed" class="swap-mode-button">Células</button><button type="button" class="upload-image" hidden title="Faça upload de uma imagem com matriz (Nota: pode não funcionar bem)"><span class="icon"></span></button><input type="file" name="upload" accept="image/*" hidden /><button type="button" class="undo-button" disabled hidden>↶</button><button type="button" class="redo-button" disabled hidden>↷</button><button type="button" class="clear-table-button" title="Limpar"><span class="icon"></span></button><span class="div-nowrap"><button type="button" class="increment-size-button resize-table-button" data-increment="+1">+</button><button type="button" class="decrement-size-button resize-table-button" data-increment="-1">&minus;</button></span></div>
+</div>
+
+
+<div id="input-template" hidden>
+  <span class="matrix-table-cell">
+    <span>
+      <span class="a-input">
+        <input type="text" id="id" name="name" autocapitalize="off" autocomplete="off"
+               spellcheck="false" inputmode="" class="matrix-table-input unfocused-placeholder"
+               data-for="for" enterkeyhint="enter" placeholder=""
+               pattern="[\p{Decimal_Number}\p{Punctuation}\p{Math}\p{Script=Latin}\p{Script=Greek}\p{Other_Number}]+" />
+      </span>
+    </span>
+  </span>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
